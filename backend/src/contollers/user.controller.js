@@ -273,15 +273,15 @@ const resetUserPassword = asyncHandler(async (req, res) =>{
         host: "smtp.gmail.email",
         port: 587,
         auth: {
-            user: 'rachet032007@gmail.com',
-            pass: 'pcvt rzqd olos ariw'
+            user: '', //enter email here
+            pass: '' //enter password here
         },
       });
 
       async function main() {
         // send mail with defined transport object
         const info = await transporter.sendMail({
-          from: 'rachet032007@gmail.com', // sender address
+          from: '', // sender address
           to: `${email}`, // list of receivers TODO: change this email to email provided
           subject: "Here is the link for Resetting your password for the faculty recruitment IIT PATNA website", // Subject line
           text: `${toVisit}`, // plain text body
